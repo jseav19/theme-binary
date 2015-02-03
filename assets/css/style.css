@@ -2656,7 +2656,7 @@ body {
 .site-header .header-top h1 {
   padding-top: 15px;
   padding-top: 0.9375rem;
-  text-transform: uppercase;
+  text-transform: none;
 }
 .site-header .header-top h1 a {
   color: #111111;
