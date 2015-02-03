@@ -2350,6 +2350,7 @@ html {
   background-color: transparent;
 }
 body {
+  background-attachment: scroll, scroll, scroll, fixed;
   color: #636363;
   line-height: 1.625;
   font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -2357,6 +2358,9 @@ body {
   font-size: 0.875rem;
   background-color: #f3f0eb;
   background-image: url("../images/light-bl.svg"), url("../images/light-br.svg"), url("../images/overlay.png"), url("../images/banner.jpg");
+  background-position: bottom left, bottom right, top left, top center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
 }
 /**
  * Global
