@@ -2356,6 +2356,7 @@ body {
   font-size: 14px;
   font-size: 0.875rem;
   background-color: #f3f0eb;
+  background-image: url("../assets/images/light-bl.svg"), url("../assets/images/light-br.svg"), url("../assets/images/overlay.png"), url("../assets/images/banner.jpg");
 }
 /**
  * Global
