@@ -2719,6 +2719,7 @@ body {
   border-bottom: solid #d7d7d7;
   border-bottom-width: 2px;
   border-bottom-width: 0.125rem;
+  opacity: .9;
 }
 .post-single {
   margin: 0 0 10px;
