@@ -27,6 +27,37 @@
     })();
     </script>
     {% endif %}
+    <style>
+  
+  .categories ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  .categories li {
+    padding-bottom: 0.5em;
+  }
+
+  .categories a,
+  .categories a:visited {
+    display: block;
+    background: #2eb18d;
+    color: #FFF;
+    padding: 0.5em 0.75em;
+    border-radius: 3px;
+  }
+
+  .categories a:hover,
+  .categories a:focus,
+  .categories a.active {
+    text-decoration: none;
+    background: #d84c30;
+  }
+
+  .categories a:active {
+    background: #b33a22;
+  }
+</style>
   </head>
   <body>
     {% if is_login %}
@@ -52,6 +83,24 @@
                 {% endfor %}
                 {% endif %}
                 <a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a>
+                {% if site.tags %}
+<nav class="categories">
+  <h4>Categories</h4>
+  <ul>
+    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a></li>
+    <li><a href="/tag/web" class="{{ set_active('/tag/web') }}">Web</a></li>
+    <li><a href="/tag/ios" class="{{ set_active('/tag/ios') }}">iOS</a></li>
+    <li><a href="/tag/android" class="{{ set_active('/tag/android') }}">Android</a></li>
+  </ul>
+</nav>
+
+<h4>Tags</h4>
+<ul class="tags">
+  {% for tag in site.tags %}
+    <li><a href="/tag/{{ tag.name }}">#{{ tag.name }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
               </ul>
             </nav>
           </div>
