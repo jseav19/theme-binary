@@ -51,7 +51,12 @@
                 <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
                 {% endfor %}
                 {% endif %}
-                <a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a>
+                <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">Design</a></li>
+                  <ul>
+                    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">sub-nav</a></li>
+                    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">sub-nav</a></li>
+                    <li><a href="/tag/design" class="{{ set_active('/tag/design') }}">sub-nav</a></li>
+                  </ul>
               </ul>
             </nav>
           </div>
