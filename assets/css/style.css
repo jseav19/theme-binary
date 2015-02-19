@@ -3092,6 +3092,7 @@ body {
   margin-top: 15px;
   margin-top: 0.9375rem;
   text-align: center;
+  font-size: 30px;
 }
 .social-links:after {
   visibility: hidden;
